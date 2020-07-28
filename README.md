@@ -26,7 +26,7 @@ This is higher than the author of the article's logarithmic regression. I then s
 from the actual voting patterns and yielded the following results and came up with the following choropleth.
 
 Blue means democratic voters are underestimated, red means republican voters are underestimated.
-![difference from trend for population density](https://stromsy.nfshost.com/content/diff1.png)
+![difference from trend for population density](https://stromsy.nfshost.com/content/diff_df1.png)
 
 Compare this to a map of percent white or asian ethnicity. (yellow is high percentage white or asian, green is high percentage other ethnicities).
 ![difference from trend for population density and non-white](https://stromsy.nfshost.com/content/minorities.png)
@@ -34,7 +34,7 @@ Compare this to a map of percent white or asian ethnicity. (yellow is high perce
 I ran a second RandomForestRegressor with population density and percent white or asian as X and voting trends as y.
 This yielded an R<sup>2</sup> score of 0.559, a notable improvement over using just population density. This lead to
 the following difference-from-trend chloropleth:
-![difference from trend for population density and non-white](https://stromsy.nfshost.com/content/diff2.png)
+![difference from trend for population density and non-white](https://stromsy.nfshost.com/content/diff_df2.png)
 
 The predictions in the South are much improved, but some other areas of the country are still quite far off or even worse than
 using only population density. Vermont in particular is entirely much more blue than its population density and ethnicity 
