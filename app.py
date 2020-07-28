@@ -11,5 +11,13 @@ DASH = Dash(
     __name__,
     server=APP,
 )
+DASH.layout = html.Div(
+    [
+        dcc.Location(id="url", refresh=False),
+        dcc.Graph(id="main-graph", style={"height": "100%", "width": "100%"})
+    ],
+    id="page-content",
+    style={"height": "100%", "width": "100%"}
+)
 
-
+import routes
