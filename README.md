@@ -28,10 +28,10 @@ from the actual voting patterns and yielded the following results and came up wi
 Blue means democratic voters are underestimated, red means republican voters are underestimated.
 ![difference from trend for population density](https://stromsy.nfshost.com/content/diff_df1.png)
 
-Compare this to a map of percent white or asian ethnicity. (yellow is high percentage white or asian, green is high percentage other ethnicities).
+Compare this to a map of percent non-hispanic white or Asian American ethnicity. (green is high percentage non-hispanic white or asian, yellow is high percentage other ethnicities).
 ![difference from trend for population density and non-white](https://stromsy.nfshost.com/content/minorities.png)
 
-I ran a second RandomForestRegressor with population density and percent white or asian as X and voting trends as y.
+I ran a second RandomForestRegressor with population density and percent non-hispanic white or Asian American as X and voting trends as y.
 This yielded an R<sup>2</sup> score of 0.559, a notable improvement over using just population density. This lead to
 the following difference-from-trend chloropleth:
 ![difference from trend for population density and non-white](https://stromsy.nfshost.com/content/diff_df2.png)
